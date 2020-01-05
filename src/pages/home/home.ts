@@ -50,4 +50,9 @@ export class HomePage {
     error => {});
   }
 
+  signup(){
+    console.log('Passou')
+    this.navCtrl.push('SignupPage');
+  }
+
 }
