@@ -75,10 +75,10 @@ export class ProfilePage {
     this.camera.getPicture(options).then((imageData) => {
      // imageData is either a base64 encoded string or a file URI
      // If it's base64 (DATA_URL):
-     this.picture = 'data:image/jpeg;base64,' + imageData;
+     this.picture = 'data:image/png;base64,' + imageData;
      this.cameraOn = false;
     }, (err) => {
-     // Handle error
+      this.cameraOn = false;
     });
   }
 
@@ -95,10 +95,10 @@ export class ProfilePage {
     this.camera.getPicture(options).then((imageData) => {
      // imageData is either a base64 encoded string or a file URI
      // If it's base64 (DATA_URL):
-     this.picture = 'data:image/jpeg;base64,' + imageData;
+     this.picture = 'data:image/png;base64,' + imageData;
      this.cameraOn = false;
     }, (err) => {
-     // Handle error
+      this.cameraOn = false;
     });
   }
 
